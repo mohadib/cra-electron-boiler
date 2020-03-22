@@ -28,17 +28,16 @@
     "@material-ui/icons": "^4.9.1",
     "axios": "^0.19.2",
     "electron-is-dev": "^1.0.1",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "styled-components": "^5.0.1"
   },
   "homepage": "./",
   "main": "public/electron.js",
   "scripts": {
-    "start": "rescripts start",
-    "build": "rescripts build",
-    "test": "rescripts test",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
     "postinstall": "electron-builder install-app-deps",
@@ -55,12 +54,10 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@rescripts/cli": "^0.0.10",
-    "@rescripts/rescript-env": "^0.0.5",
-    "concurrently": "^4.1.0",
-    "electron": "^4.0.6",
-    "electron-builder": "^20.38.5",
+    "concurrently": "^5.1.0",
+    "electron": "^8.1.1",
+    "electron-builder": "^22.4.1",
     "typescript": "^3.3.3333",
-    "wait-on": "^3.2.0"
+    "wait-on": "^4.0.1"
   }
 }
